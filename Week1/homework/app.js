@@ -35,7 +35,7 @@ function createList(array) {
 
 // 2.4 - Creating object with nested objects
 const books = {
-  'crime_and_punishment' : {
+  'crime_and_punishment': {
     title: 'Crime and Punishment',
     author: 'Fyodor Dostoyevsky',
     language: 'English',
@@ -62,7 +62,7 @@ const books = {
   },
   'fathers_and_sons': {
     title: 'Fathers and Sons',
-    author: 'Ivan Turgenev', 
+    author: 'Ivan Turgenev',
     language: 'English',
   },
   'eugene_onegin': {
@@ -104,7 +104,7 @@ const bookCovers = {
 // 2.5 - Creating a function that generates ul with li from the object 'books'
 function displayBooks(books) {
   let list = document.createElement('ul'); // creating a UL element
-  
+
   // introducing a for-loop for nested objects
   for (let key in books) {
     let listItem = document.createElement('li');
@@ -126,14 +126,13 @@ function displayBooks(books) {
 
     listItem.append(heading, text, cover);
     list.appendChild(listItem);
-
   }
 
   return list;
 }
 
 // run the function on page load
-window.onload = function() {
+window.onload = function () {
   document.body.appendChild(displayBooks(books));
 };
 
