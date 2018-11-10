@@ -2,6 +2,8 @@
 
 const numbers = [1, 2, 3, 4];
 
+// Add your code here
+
 const oddNumbers = numbers.filter((x) => x % 2 !== 0)
 const newNumbers = oddNumbers.map((x) => x * 2)
 
@@ -14,4 +16,4 @@ for (let i = 0; i < numbers.length; i++) {
 } */
 
 console.log('The doubled numbers are', newNumbers);
-// Add your code here
+

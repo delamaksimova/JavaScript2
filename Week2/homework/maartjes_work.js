@@ -64,3 +64,5 @@ const euroFormatter = new Intl.NumberFormat('en-SWE', {
 })
 
 console.log('For longer tasks the total payment for Maartje is ' + euroFormatter.format(totalSalary))
+
+// euro sign - '\u20ac'
